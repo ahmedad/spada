@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spada</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+  	<!--======== header =========-->
+        <header id="home">
+            <div class="small-menu small-menu-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-8 col-xs-5">
+                            <!-- <ul class="list-inline info-link">
+                                <li title="Language"><i class="fa fa-globe"></i><span class="hidden-xs">Language : English</span></li>
+                                <li title="Hot Line"><i class="fa fa-phone"></i><span class="hidden-xs">(+123) 45678910</span></li>
+                                <li title="Show Time"><i class="fa fa-clock-o"></i><span class="hidden-xs">Sat - Wet : 9.00 - 18.00</span></li>
+                            </ul> -->
+                        </div> 
+                        <div class="col-md-5 col-sm-4 col-xs-7">
+                            <ul class="list-inline pull-right social-link">
+                                <li title="Email"><i class="fa fa-paper-plane"></i><span class="hidden-sm hidden-xs">info@bootultra.com </span></li>
+                                <li title="Facebook"><i class="fa fa-facebook"></i></li>
+                                <li title="Google+"><i class="fa fa-google-plus"></i></li>
+                                <li title="Twitter"><i class="fa fa-twitter"></i></li>
+                                <li title="Dribbble"><i class="fa fa-dribbble"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!-- menu 4 -->
+                    <div class="navbar navbar-default default-menu menu-4" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-4" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand default-logo" href="#">SPADA</a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="menu-4">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a class="scroll" href="#home">Home</a></li>
+                                    <li><a class="scroll" href="#about-us">About us</a></li>
+                                    <li><a class="scroll" href="#service">Service</a></li>
+                                    <li><a class="scroll" href="#team">Team</a></li>
+                                    <li><a class="scroll" href="#contact">Contact</a></li>
+                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
+                                        <ul class="dropdown-menu list-search">
+                                            <li>
+                                                <form class="navbar-form navbar-left nav-search" role="search">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <i class="fa fa-search"></i>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end menu -->
+                </div>
+            </div>            
+        </header>
+        <!--======== end header =========-->
+        
+        <!--======== intro =========-->
+        <section class="intro">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="intro-content text-center">
+                                    <h1>welcome to Ranger</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non.</p>
+                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn-primary scroll" href="#what-we-do" href="#" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="intro-content text-center">
+                                    <h1>we can help you</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non.</p>
+                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn-primary scroll" href="#what-we-do" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="intro-content text-center">
+                                    <h1>we can Guide you</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non.</p>
+                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn-primary scroll" href="#what-we-do" href="#" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======== end intro =========-->
+    <%= yield %>
+  </body>
+</html>
