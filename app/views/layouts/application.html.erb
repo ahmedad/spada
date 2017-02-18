@@ -47,28 +47,16 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand default-logo" href="#">SPADA</a>
+                                <a class="navbar-brand default-logo" href="#" style="font-size: 4rem; margin-top: 1.5rem;">SPDI</a>
                             </div>
 
                             <div class="collapse navbar-collapse" id="menu-4">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="active"><a class="scroll" href="#home">Home</a></li>
-                                    <li><a class="scroll" href="#about-us">About us</a></li>
+                                    <li><%= link_to "Home", root_path, class: 'scroll' %></li>
+                                    <li><%= link_to "Our Profile", about_index_path, class: 'scroll' %></li>
                                     <li><a class="scroll" href="#service">Service</a></li>
                                     <li><a class="scroll" href="#team">Team</a></li>
                                     <li><a class="scroll" href="#contact">Contact</a></li>
-                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
-                                        <ul class="dropdown-menu list-search">
-                                            <li>
-                                                <form class="navbar-form navbar-left nav-search" role="search">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Search">
-                                                        <i class="fa fa-search"></i>
-                                                    </div>
-                                                </form>
-                                            </li>
-                                        </ul>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -78,48 +66,6 @@
         </header>
         <!--======== end header =========-->
         
-        <!--======== intro =========-->
-        <section class="intro">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="intro-content text-center">
-                                    <h1>Mission</h1>
-                                    <h3>To offer peace solutions advice to war related problems facing the people of the horn of Africa by promoting peace and reconciliation and thereby stopping the spread of conflicts</h3>
-                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
-                                    <a class="btn btn-primary scroll" href="#what-we-do" href="#" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="intro-content text-center">
-                                    <h1>Vission</h1>
-                                    <h3>To strive and make Somali Peace Development Integration an efficient service provider in promoting peace and reconciliation in the horn of Africa.</h3>
-                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
-                                    <a class="btn btn-primary scroll" href="#what-we-do" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="intro-content text-center">
-                                    <h1>Motto</h1>
-                                    <h3>The motto of war is to let the strong survive and the weak die while for peace it letting the strong help the weak in the society among us.</h3>
-                                    <a class="btn btn-default" href="#" role="button">Read More <i class="lnr lnr-chevron-right"></i></a>
-                                    <a class="btn btn-primary scroll" href="#what-we-do" href="#" role="button">Get Started <i class="lnr lnr-chevron-down"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--======== end intro =========-->
     <%= yield %>
   </body>
 </html>
