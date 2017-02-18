@@ -1,82 +1,4 @@
-<!--======== recent event =========-->
-        <section class="recent-event">
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-sm-12">
-                    <div class="event-box text-center">
-                        <h3>Recent Events</h3>
-                        <div class="container">
-                            <%if @news.exists? %>
-                                <% @news.each_slice(3) do |post| %>
-                                <div class="row">
-                                    <% @news.each do |post| %>
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="post">
-                                            <div class="news-thumb">
-                                                <%= image_tag news.image.url, width: '100%'%>
-                                                <div class="news-overlay"><i class="fa fa-link"></i></div>
-                                            </div>  
-                                            <div class="post-content">
-                                                <h4 class="media-heading"><%= news.title %></h4>
-                                                <small>post by <%= news.user.name %> on <%= news.created_at.to_time.strftime('%B %e at %l: %M %p') %></small>
-                                                <%= raw news.body.truncate(200) %>
-                                                <%= link_to 'Read More', news_path(news), class: 'btn btn-primary' %>
-                                            </div>
-                                          </div>
-                                        </div>
-                                       <% end %>
-                                      </div>
-                                      <% end %>
-                                    <% else %>
-                                    <p></p>
-                            <% end %>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 col-xs-12">
-                    <div class="row">
-                        <div class="col-sm-3 p-l-r-0">
-                            <div class="event-img">
-                                <img src="images/event-2.png" alt="image">
-                                <div class="event-overflow">
-                                    <p>Hanery Parkin</p>
-                                    <small>Jan 8, 2016</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 p-l-r-0">
-                            <div class="event-img">
-                                <img src="images/event-1.png" alt="image">
-                                <div class="event-overflow">
-                                    <p>Hanery Parkin</p>
-                                    <small>Jan 8, 2016</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 p-l-r-0">
-                            <div class="event-img">
-                                <img src="images/event-2.png" alt="image">
-                                <div class="event-overflow">
-                                    <p>Hanery Parkin</p>
-                                    <small>Jan 8, 2016</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 p-l-r-0">
-                            <div class="event-img">
-                                <img src="images/event-1.png" alt="image">
-                                <div class="event-overflow">
-                                    <p>Hanery Parkin</p>
-                                    <small>Jan 8, 2016</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--======== end recent evnt =========-->
-        
-        <!--======== what we do =========-->
+    <!--======== what we do =========-->
         <section id="what-we-do" class="what-we-do">
             <div class="container">
                 <div class="row">
@@ -84,8 +6,7 @@
                         <p class="small-tag">We are awesome</p>
                         <h2 class="section-title">What we do</h2>
                         <div class="border"><span class="border-l-r"><i class="lnr lnr-diamond"></i></span></div>
-                        <p class="section-para">Lorem ipsum dolor sit amet, consectetuer adiping elit agrel. Donec odio. 
-                        Quisque volutpat mattis eros. Nullam malesuada urna nibh viverra non.</p>
+                        <h4 class="section-para">We offer professional training and help the all matters mentioned below</h4>
                     </div>
                 </div>   
                 <div class="row">
@@ -93,26 +14,23 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="do-box text-center">
-                                    <i class="lnr lnr-inbox"></i>
-                                    <h3>Wordpress</h3>
-                                    <p>Lorem Ipsum adalah text contoh dikan didalam industri pencet typesetting. Apabila pencetak yang 
-                                    kurang terkenal mengambil sebuah galeri cetak dan merobak.</p>
+                                    <i class="lnr lnr-leaf"></i>
+                                    <h3>Peace </h3>
+                                    <p>Bringing conflicting parties together, opening channels of communication and helping to broker a ceasefire or peace agreement</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="do-box bg-color text-center">
-                                    <i class="lnr lnr-cog"></i>
-                                    <h3>Bootstrap</h3>
-                                    <p>Lorem Ipsum adalah text contoh dikan didalam industri pencet typesetting. Apabila pencetak yang 
-                                    kurang terkenal mengambil sebuah galeri cetak dan merobak.</p>
+                                    <i class="lnr lnr-users"></i>
+                                    <h3>Reconcilition</h3>
+                                    <p> By generally understanding the reestablishment of friendly relations, though it assumes different forms and roles in different contexts. In the case of armed conflicts, reconciliation incorporates the search for truth, justice, forgiveness and accommodation between conflicting groups or people.</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="do-box text-center">
-                                    <i class="lnr lnr-leaf"></i>
-                                    <h3>Joomla</h3>
-                                    <p>Lorem Ipsum adalah text contoh dikan didalam industri pencet typesetting. Apabila pencetak yang 
-                                    kurang terkenal mengambil sebuah galeri cetak dan merobak.</p>
+                                    <i class="lnr lnr-cog"></i>
+                                    <h3>Development</h3>
+                                    <p> To promote income generating activities and create vocational skills for the youngsters, women, and IDPs to become self-sufficient and reduce the level of poverty living.</p>
                                 </div>
                             </div>
                         </div>   
@@ -121,22 +39,22 @@
             </div>
         </section>
         <!--======== end what we do =========-->
-        
+
         <!--======== about us =========-->
-        <section id="about-us" class="about-us">
+        <section class="about-us">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 col-xs-12 p-l-r-0">
                         <div id="about" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="images/about-us-2.jpg" width="100%" alt="" />
+                                    <%= image_tag('img1.jpg') %>
                                 </div>
                                 <div class="item">
-                                    <img src="images/about-us-1.jpg" width="100%" alt="" />
+                                    <%= image_tag('img2.jpeg') %>
                                 </div>
                                 <div class="item">
-                                    <img src="images/about-us.jpg" width="100%" alt="" />
+                                    <%= image_tag('about-us-1.jpg') %>
                                 </div>
                             </div>
                         </div>
@@ -144,15 +62,8 @@
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="about-content">
-                            <h2 class="section-title">About Us</h2>
-                            <p>Lorem ipsum dolor sit amet reprehenderit, enim eiusmod high life 
-                            accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
-                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Haccusamus terry richardson ad squid. pwolf moon 
-                            officia aute, non cupidatat skateboard.</p>
-                            <p>Lorem ipsum dolor sit amet reprehenderit, enim eiusmod high life 
-                            accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
-                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Haccusamus terry richardson ad squid. pwolf moon 
-                            officia aute, non cupidatat skateboard.</p>
+                            <h2 class="section-title">Our hope</h2>
+                            <p>Our hope is to see somalia with a central government which is living in peace and harmony with developemnt in all sectors including education, health, agriculture, marine e.t.c.</p>
                         </div> 
                     </div>
                 </div>
@@ -168,96 +79,35 @@
                         <p class="small-tag">What we offer</p>
                         <h2 class="section-title">Our Services</h2>
                         <div class="border"><span class="border-l-r"><i class="lnr lnr-diamond"></i></span></div>
-                        <p class="section-para">Lorem ipsum dolor sit amet, consectetuer adiping elit agrel. Donec odio. 
-                        Quisque volutpat mattis eros. Nullam malesuada urna nibh viverra non.</p>
+                        <p class="section-para">We give all these and more trainings in for our society</p>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="four-slide">
-                            <div class="single-slide"><img src="images/service-1.jpg" alt="">
+                            <div class="single-slide"><%= image_tag('peace.png') %>
                                 <div class="service-overflow text-center">
-                                    <h3>Responsive</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
+                                    <h3>Peace Trainings</h3>
+                                    <p>For the youth and the elders</p>
                                 </div>
                             </div>
-                            <div class="single-slide"><img src="images/service-2.jpg" alt="">
+                            <div class="single-slide"><%= image_tag('recon.png') %>
                                 <div class="service-overflow text-center">
-                                    <h3>Web Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
+                                    <h3>Reconciliation traings</h3>
+                                    <p>This is to deal with conflicting parties in the society</p>
                                 </div>
                             </div>
-                            <div class="single-slide"><img src="images/service-3.jpg" alt="">
+                            <div class="single-slide"><%= image_tag('developent.png') %>
                                 <div class="service-overflow text-center">
-                                    <h3>Development</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
+                                    <h3>Development Traing</h3>
+                                    <p>Trainings on how to sustain and gen.</p>
                                 </div>
                             </div>
-                            <div class="single-slide"><img src="images/service-4.jpg" alt="">
+                            <div class="single-slide"><%= image_tag('med.png') %>
                                 <div class="service-overflow text-center">
-                                    <h3>Programming</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-1.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>Bootstrap</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-2.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>Wordpress</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-3.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>Joomla</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-4.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>Web Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-1.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>HTML5</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-2.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>CSS3</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-3.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>Responsive</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                                </div>
-                            </div>
-                            <div class="single-slide"><img src="images/service-4.jpg" alt="">
-                                <div class="service-overflow text-center">
-                                    <h3>Wordpress</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                                    Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
+                                    <h3>Mediation and Arbitration Trainings</h3>
+                                    <p>How to resolve problems using those methods</p>
                                 </div>
                             </div>
                         </div>
@@ -266,26 +116,6 @@
             </div>
         </section>
         <!--======== end our service =========-->
-        
-        <!--======== extra featrue =========-->
-        <section class="extra-feature">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-md-offset-1 col-md-6 col-xs-12"> 
-                        <h2 class="section-title">We are Expert in <span>Wed Design</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit agrel. 
-                        Donec odio. Quisque volutpat mattis eros.  Rerat ut turpis.</p>
-                        <a class="btn btn-default" href="#" role="button">Download <i class="lnr lnr-arrow-right"></i></a>
-                    </div>
-                    <div class="col-md-6 col-xs-12"> 
-                        <div class="e-feature">
-                            <img class="feature-img" src="images/extra-img.png" alt="" />
-                        </div>    
-                    </div>    
-                </div>
-            </div>    
-        </section>
-        <!--======== end extra featrue =========-->
         
         <!--======== our expets =========-->
         <section id="team" class="our-experts">
